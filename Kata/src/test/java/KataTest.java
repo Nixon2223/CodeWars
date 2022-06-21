@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class KataTest {
 
     @Test
-    public void canSortTheOdd(){
+    public void canSortTheOdd() {
         int[] numArray1 = {2, 4, 6, 3, 4};
         int[] numArray2 = {1, 4, 6, 3, 11};
         int[] numArray3 = {2, 4, 6, 3, 7, 5, 77};
@@ -17,7 +17,7 @@ public class KataTest {
     }
 
     @Test
-    public void isIsogram(){
+    public void isIsogram() {
         String string1 = "Dermatoglyphics";
         String string2 = "aba";
         String string3 = "moOse";
@@ -25,6 +25,17 @@ public class KataTest {
         assertTrue(Kata.isIsogram(string1));
         assertFalse(Kata.isIsogram(string2));
         assertFalse(Kata.isIsogram(string3));
-        }
     }
+
+    @Test
+    public void reverseWords() {
+        String string1 = "This is an example!";
+        String string2 = "double  spaces";
+
+        assertEquals("sihT si na !elpmaxe", string1.reverseWords());
+        assertEquals("elbuod  secaps", string2.reverseWords());
+    }
+}
+
+
 
