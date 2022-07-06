@@ -51,5 +51,14 @@ public class Kata {
         return result.toString();
     }
 
-
+    public static int GetSum(int a, int b) {
+        int result = 0;
+        int min = Math.min(a, b);
+        int max = Math.max(a, b);
+        while ( min <= max ) {
+            result +=min;
+            min++;
+        }
+        return result;
+    }
 }

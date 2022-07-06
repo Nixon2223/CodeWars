@@ -35,6 +35,13 @@ public class KataTest {
         assertEquals("sihT si na !elpmaxe", Kata.reverseWords(string1));
         assertEquals("elbuod  secaps", Kata.reverseWords(string2));
     }
+
+    @Test
+    public void Test1()
+    {
+        assertEquals(-1, Kata.GetSum(0, -1));
+        assertEquals(1, Kata.GetSum(0, 1));
+    }
 }
 
 
