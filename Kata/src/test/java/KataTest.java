@@ -32,8 +32,8 @@ public class KataTest {
         String string1 = "This is an example!";
         String string2 = "double  spaces";
 
-        assertEquals("sihT si na !elpmaxe", string1.reverseWords());
-        assertEquals("elbuod  secaps", string2.reverseWords());
+        assertEquals("sihT si na !elpmaxe", Kata.reverseWords(string1));
+        assertEquals("elbuod  secaps", Kata.reverseWords(string2));
     }
 }
 
