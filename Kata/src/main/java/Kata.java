@@ -64,10 +64,11 @@ public class Kata {
 
     public static long findNb(long m) {
         long x = 0;
-        int n = 1;
+        long n = 1;
+        long i = 3;
         while (x <= m){
             if (x == m) return n - 1;
-            x += Math.pow(n, 3);
+            x += (long) Math.pow(n, i);
             n++;
         }
         return -1;
