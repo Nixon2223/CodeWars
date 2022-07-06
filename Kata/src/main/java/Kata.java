@@ -36,7 +36,19 @@ public class Kata {
     }
 
     public static String reverseWords(final String original) {
+        int offset = 0;
+        int i = 0;
+        StringBuilder result = new StringBuilder();
+        for (char ch : original.toCharArray()){
+            if (ch == ' '){
+                offset = i + 1;
+                result.insert(offset - 1, ch);
+            }
+            else result.insert(offset, ch);
+            i++;
+        }
 
+        return result.toString();
     }
 
 
