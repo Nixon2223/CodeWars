@@ -73,5 +73,19 @@ public class Kata {
         }
         return -1;
     }
+
+    public static int persistence(long n) {
+        int i = 0;
+        while (n >= 10){
+            long m = 1;
+            char[] charArray = (n+"").toCharArray();
+            for (char x : charArray ){
+                m *= (x - '0');
+            }
+            n = m;
+            i++;
+        }
+        return i;
+    }
 }
 

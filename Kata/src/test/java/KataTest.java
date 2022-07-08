@@ -60,6 +60,14 @@ public class KataTest {
         assertEquals(3568, Kata.findNb(40539911473216L));
     }
 
+    @Test
+    public void persistenceTests() {
+        assertEquals(3, Kata.persistence(39));
+        assertEquals(0, Kata.persistence(4));
+        assertEquals(2, Kata.persistence(25));
+        assertEquals(4, Kata.persistence(999));
+    }
+
 }
 
 
